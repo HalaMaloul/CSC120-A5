@@ -22,7 +22,7 @@ Car(int maxCapacity){
  * 
  * @return max Capacity-int value for the max capacity of the car
  */
-public int getmaxCapacity(){
+public int getMaxCapacity(){
     return maxCapacity;
    
 }

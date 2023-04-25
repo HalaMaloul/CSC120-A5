@@ -5,8 +5,8 @@
 
 public class Engine {
     private FuelType f;
-    private Double currentFuelLevel;
-    private  Double maxFuelLevel;
+    private double currentFuelLevel;
+    private  double maxFuelLevel;
 
   public FuelType getf() {
     return f;
@@ -22,7 +22,7 @@ public Double getcurrentFuelLevel(){
  
  * @return Double value for max fuel level
  */
-public Double maxFuelLevel(){
+public Double getmaxFuelLevel(){
     return this.maxFuelLevel;}
 
 
@@ -31,7 +31,7 @@ public Double maxFuelLevel(){
  @param f -fueltype
  @param maxFuelLevel- Double value for max fuel level
  */
-Engine(FuelType f,Double maxFuelLevel){
+public Engine(FuelType f,Double maxFuelLevel){
 
     this.f=f;
     this.maxFuelLevel=maxFuelLevel;
@@ -55,7 +55,7 @@ public void refuel(){
  
  */
 public void go(){
-    if (currentFuelLevel>0){
+    if (currentFuelLevel>currentFuelLevel-10){
     currentFuelLevel=currentFuelLevel-10;
     System.out.println("current fuel level ="+currentFuelLevel);}
     
