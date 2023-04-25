@@ -1,5 +1,5 @@
 /**
- This class is used for the Car Data
+ This class is used for the train Data
 
  */
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ public class Train {
 
     private final Engine engine;
     private ArrayList<Car> cars;
-    private int nCars;
-    
+   
+     
 /**
   This constructer accepts data for the fueltype and the  fule capacity and the passengers capacity and it will initialize the `Engine` and `Car`s and store them
  @param fuelType-
@@ -25,7 +25,7 @@ public class Train {
  * 
  * @return engine
  */
-    public Engine getengine(){
+    public Engine getEngine(){
         return this.engine;
     }
     /** This method will  return the `i`th car
@@ -38,10 +38,10 @@ public class Train {
   /** This method will  return the maximum total capacity across all `Car`s
    *@return all capacity-int value for capacity of all cars
  */
-    public int getmaxCapacityTrain(){
+    public int getMaxCapacityTrain(){
         int allcapacity = 0;
-        for (int i = 0; i < nCars; i++) {
-           int carcapacity= this.getCar(i).getmaxCapacity();
+        for (int i = 0; i < cars.size(); i++) {
+           int carcapacity= this.getCar(i).getMaxCapacity();
             allcapacity+=carcapacity;
 
           }
@@ -56,7 +56,7 @@ public class Train {
 
     public int seatsRemaining(){
         int allSeatsRemaining= 0;
-        for (int x = 0; x < nCars; x++) {
+        for (int x = 0; x < cars.size(); x++) {
            int carSaetsRemaining= this.getCar(x).seatsRemaining();
             allSeatsRemaining+=carSaetsRemaining;
 
