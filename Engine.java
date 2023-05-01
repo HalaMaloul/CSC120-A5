@@ -15,14 +15,14 @@ public class Engine {
  * 
  * @return Double value for current fuel level
  */
-public Double getcurrentFuelLevel(){
+public double getCurrentFuelLevel(){
     return this.currentFuelLevel;}
 
 /** This method will return the max fuel level
  
  * @return Double value for max fuel level
  */
-public Double getmaxFuelLevel(){
+public double getMaxFuelLevel(){
     return this.maxFuelLevel;}
 
 
